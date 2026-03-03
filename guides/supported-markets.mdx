@@ -5,24 +5,49 @@ description: All currently available SQFT markets on the Shareland exchange.
 
 # Supported Markets
 
-Shareland currently supports the following markets at launch. Each market tracks the price per square foot of residential real estate in that geography.
+Shareland currently supports four markets at launch. Each market tracks the price per square foot of residential real estate in that geography.
 
-## Available Now
+## Live Markets
 
-Markets are added on a rolling basis. Check the exchange at [share.land](https://share.land) for live prices.
+<CardGroup cols={2}>
+  <Card title="New York" icon="building">
+    **SQFT\_NYC** · NY  
+    ~$761 / ft²  
+    Vol. 24h: USDC 36,463
+  </Card>
+  <Card title="Los Angeles" icon="sun">
+    **SQFT\_LA** · CA  
+    ~$1,217 / ft²  
+    Vol. 24h: USDC 21,638
+  </Card>
+  <Card title="San Francisco" icon="bridge">
+    **SQFT\_SF** · CA  
+    ~$1,342 / ft²  
+    Vol. 24h: USDC 18,222
+  </Card>
+  <Card title="Miami" icon="water">
+    **SQFT\_MIA** · FL  
+    ~$822 / ft²  
+    Vol. 24h: USDC 11,275
+  </Card>
+</CardGroup>
 
 <Note>
-  Market availability depends on oracle data coverage. We prioritize markets with high data density and liquidity.
+  Prices update in real time from the oracle. Visit [share.land](https://share.land) for live pricing.
 </Note>
+
+## What each market tracks
+
+Each market tracks the average **price per square foot** of residential real estate in that geography, updated continuously by the Shareland oracle. The oracle aggregates recent home sales, active listings, and historical trends to produce a live $/sqft price.
 
 ## How markets are added
 
-New markets go through a process:
+New markets go through a validation process before launch:
 
-1. **Data review** — sufficient transaction data must exist for reliable oracle pricing
-2. **Oracle validation** — prices are backtested and validated by Shareland's data team
+1. **Data review** — sufficient transaction volume must exist for reliable oracle pricing
+2. **Oracle validation** — prices are backtested and validated by Shareland's data team (led by Andrey Pavlov, PhD)
 3. **Launch** — market goes live with initial liquidity
 
 ## Request a market
 
-Want to see a specific neighborhood or city? Reach out to the team or post in the community Discord.
+Want to see a specific neighborhood or city? Post a request in the [Discord community](https://discord.com/invite/5njaDH5y39).
