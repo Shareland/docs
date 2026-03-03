@@ -1,0 +1,28 @@
+name: Update Screenshots
+
+on:
+  workflow_dispatch: # run manually
+  schedule:
+    - cron: '0 9 * * 1' # every Monday 9am UTC
+
+jobs:
+  screenshots:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          
+      - name: Install dependencies
+        run: npm install && npx playwright install chromium
+        
+      - name: Capture screenshots
+        run: node scripts/update-screenshots.js
+        
+      - name: Commit updated screenshots
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: update screenshots [skip ci]'
+          file_pattern: 'images/screenshots/*.png'
