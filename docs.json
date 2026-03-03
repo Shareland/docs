@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Shareland",
   "colors": {
-    "primary": "#7C3AED",
-    "light": "#A78BFA",
-    "dark": "#5B21B6"
+    "primary": "#3870FF",
+    "light": "#6B9BFF",
+    "dark": "#1E4DCC"
   },
   "favicon": "/images/favicon.png",
   "logo": {
@@ -14,38 +14,106 @@
     "href": "https://share.land"
   },
   "navbar": {
-    "links": [{"label": "Exchange", "href": "https://share.land"}],
-    "primary": {"type": "button", "label": "Start Trading", "href": "https://share.land"}
+    "links": [
+      {
+        "label": "Exchange",
+        "href": "https://share.land"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Start Trading",
+      "href": "https://share.land"
+    }
   },
   "navigation": {
     "tabs": [
       {
         "tab": "Guides",
-        "groups": [{"group": "Getting Started", "pages": ["guides/introduction","guides/what-is-sqft","guides/how-it-works","guides/supported-markets"]}]
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "guides/introduction",
+              "guides/what-is-sqft",
+              "guides/how-it-works",
+              "guides/supported-markets"
+            ]
+          }
+        ]
       },
       {
         "tab": "How To",
         "groups": [
-          {"group": "Your Account", "pages": ["how-to/create-account","how-to/view-portfolio"]},
-          {"group": "Trading", "pages": ["how-to/buy-sqft","how-to/sell-sqft","how-to/understand-oracle"]},
-          {"group": "Community", "pages": ["how-to/community-tabs"]}
+          {
+            "group": "Your Account",
+            "pages": [
+              "how-to/create-account",
+              "how-to/view-portfolio"
+            ]
+          },
+          {
+            "group": "Trading",
+            "pages": [
+              "how-to/buy-sqft",
+              "how-to/sell-sqft",
+              "how-to/understand-oracle"
+            ]
+          },
+          {
+            "group": "Community",
+            "pages": [
+              "how-to/community-tabs"
+            ]
+          }
         ]
       },
       {
         "tab": "Reference",
-        "groups": [{"group": "Resources", "pages": ["reference/faq","reference/glossary","reference/regulatory"]}]
+        "groups": [
+          {
+            "group": "Resources",
+            "pages": [
+              "reference/faq",
+              "reference/glossary",
+              "reference/regulatory"
+            ]
+          }
+        ]
       }
     ],
     "global": {
       "anchors": [
-        {"anchor": "Exchange", "href": "https://share.land", "icon": "arrow-up-right"},
-        {"anchor": "Community", "href": "https://discord.com/invite/5njaDH5y39", "icon": "discord"},
-        {"anchor": "Twitter", "href": "https://x.com/sharedotland", "icon": "x-twitter"}
+        {
+          "anchor": "Exchange",
+          "href": "https://share.land",
+          "icon": "arrow-up-right"
+        },
+        {
+          "anchor": "Community",
+          "href": "https://discord.com/invite/5njaDH5y39",
+          "icon": "discord"
+        },
+        {
+          "anchor": "Twitter",
+          "href": "https://x.com/sharedotland",
+          "icon": "x-twitter"
+        }
       ]
     }
   },
   "footer": {
-    "socials": {"x": "https://x.com/sharedotland", "discord": "https://discord.com/invite/5njaDH5y39"}
+    "socials": {
+      "x": "https://x.com/sharedotland",
+      "discord": "https://discord.com/invite/5njaDH5y39"
+    }
   },
-  "contextual": {"options": ["copy", "view", "chatgpt", "claude"]}
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude"
+    ]
+  }
 }
