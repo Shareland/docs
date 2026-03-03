@@ -1,11 +1,13 @@
 ---
-title: What is SQFT?
+title: What are SQFT Tokens?
 description: Understanding the Square Foot Token — Shareland's core investment instrument.
 ---
 
-# What is the Square Foot Token (SQFT)?
+# What are SQFT Tokens?
 
-The Square Foot Token (SQFT) is a synthetic asset that tracks the **price per square foot** of residential real estate in a specific geography — whether that's a neighborhood like Beverly Hills, a city like Chicago, or a custom region.
+The Square Foot Token (SQFT) is a synthetic asset that tracks the **price per square foot** of residential real estate in a specific geography — whether that's a neighborhood, a city, or a custom region.
+
+Each SQFT token represents one square foot of real estate in a given neighborhood. The price of each token tracks the average $/sqft of residential real estate for that neighborhood.
 
 ## How SQFT is priced
 
@@ -15,27 +17,49 @@ SQFT tokens are priced using a real-time oracle that aggregates:
 - Historical price trends
 - Neighborhood-level square footage data
 
-The oracle updates prices continuously, giving you live exposure to real estate markets without owning physical property.
+The oracle updates continuously, giving you live exposure to real estate markets without owning physical property.
 
 ## Example
 
 <Note>
-Beverly Hills currently trades at ~$2,224/sqft. If you buy 10 SQFT tokens for Beverly Hills at that price and prices rise to $2,400/sqft, your position gains ~8%.
+  New York currently trades at ~$761/sqft. If you invest $500 in NY SQFT tokens and prices rise 10%, your position is worth ~$550 — without ever owning property.
 </Note>
 
 ## SQFT is a derivative — not ownership
 
 SQFT tokens give you **price exposure** to real estate, not fractional ownership of a property. This is similar to how commodity futures let you gain exposure to oil prices without owning barrels of oil.
 
-This structure means:
+This means:
 - **No property management** — you're not a landlord
-- **Instant liquidity** — buy and sell anytime the market is open
+- **Instant liquidity** — buy and sell anytime
 - **Lower fees** — 1.5% vs 6% in traditional real estate
-- **No minimum** — invest any amount
+- **No minimum** — invest any amount ($0.10 minimum per transaction)
+- **Any geography** — from a specific neighborhood to an entire city
 
-## Supported markets
+## The peg mechanism
 
-Shareland launches with select US neighborhoods and cities. Markets are added over time based on data availability and community demand.
+Shareland maintains a soft peg between the oracle price (real-world $/sqft) and the market price of SQFT tokens. Market forces can push the token price slightly above or below the oracle price, but several mechanisms keep the difference small and consistent.
+
+**If the token price rises above oracle price:** anyone can mint new tokens by locking collateral (at minimum 110% of the oracle price) and sell them at the market premium — a risk-free profit that naturally brings the price back down.
+
+**If the token price falls below oracle price:** existing token issuers are incentivized to buy tokens at the lower market price and burn them to retrieve their locked collateral — naturally reducing supply and pushing prices back up.
+
+This keeps SQFT token performance tightly correlated to actual real estate price movements — which is the whole point.
+
+## Mint and Burn
+
+Advanced users can interact directly with the Shareland protocol:
+
+- **Mint (Borrow):** Lock up collateral (typically USDC at 110%+ of oracle price) to create new SQFT tokens. This is like borrowing tokens from the protocol.
+- **Burn (Redeem):** Return previously minted tokens to retrieve your locked collateral.
+
+Most users only need to **Trade** — buy and sell tokens on the exchange without interacting with the mint/burn mechanism.
+
+## Why this matters
+
+> "We see a future where individuals can invest in real estate without asset ownership; powered by a highly liquid blockchain-powered asset class." — Shareland Litepaper
+
+Residential real estate is the best-performing major asset class in history for most Americans — but it's been locked behind massive capital requirements and illiquidity. SQFT tokens unlock it for everyone.
 
 <Card title="View supported markets" icon="map" href="/guides/supported-markets">
   See all currently available SQFT markets

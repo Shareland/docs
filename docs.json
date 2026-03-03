@@ -29,9 +29,16 @@
             "group": "Getting Started",
             "pages": [
               "guides/introduction",
+              "guides/why-shareland",
               "guides/what-is-sqft",
               "guides/how-it-works",
               "guides/supported-markets"
+            ]
+          },
+          {
+            "group": "Products",
+            "pages": [
+              "guides/tycoon"
             ]
           }
         ]
@@ -55,9 +62,10 @@
             ]
           },
           {
-            "group": "Community",
+            "group": "Community & Rewards",
             "pages": [
-              "how-to/community-tabs"
+              "how-to/community-tabs",
+              "how-to/points-rewards"
             ]
           }
         ]
@@ -103,11 +111,6 @@
     }
   },
   "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude"
-    ]
+    "options": ["copy", "view", "chatgpt", "claude"]
   }
 }
