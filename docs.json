@@ -7,10 +7,10 @@
     "light": "#A78BFA",
     "dark": "#5B21B6"
   },
-  "favicon": "/images/favicon.svg",
+  "favicon": "/images/favicon.png",
   "logo": {
-    "light": "/images/logo-light.svg",
-    "dark": "/images/logo-dark.svg",
+    "light": "/images/logo-light.png",
+    "dark": "/images/logo-dark.png",
     "href": "https://share.land"
   },
   "navbar": {
