@@ -14,12 +14,6 @@
     "href": "https://share.land"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Exchange",
-        "href": "https://share.land"
-      }
-    ],
     "primary": {
       "type": "button",
       "label": "Start Trading",
