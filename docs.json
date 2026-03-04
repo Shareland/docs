@@ -59,6 +59,8 @@
             "pages": [
               "how-to/buy-sqft",
               "how-to/sell-sqft",
+              "how-to/stake-sqft",
+              "how-to/borrow",
               "how-to/understand-oracle"
             ]
           },
