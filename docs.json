@@ -28,10 +28,13 @@
           {
             "group": "Getting Started",
             "pages": [
+              "guides/why-shareland",
               "guides/introduction",
+              "guides/quickstart",
               "guides/what-are-sqft-tokens",
               "guides/how-it-works",
-              "guides/supported-markets"
+              "guides/supported-markets",
+              "guides/tycoon"
             ]
           }
         ]
@@ -53,7 +56,14 @@
               "how-to/sell-sqft",
               "how-to/stake-and-claim",
               "how-to/borrow-mint-burn",
-              "how-to/understand-oracle"
+              "how-to/understand-oracle",
+              "how-to/community-tabs"
+            ]
+          },
+          {
+            "group": "Rewards",
+            "pages": [
+              "how-to/points-rewards"
             ]
           }
         ]
