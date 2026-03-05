@@ -17,14 +17,14 @@ Minting is the process of creating new SQFT tokens. When you mint, you are effec
 
 ## Collateralization & Liquidation
 
-To ensure the system remains solvent, all minted positions must be over-collateralized.
+To ensure the system remains solvent, all minted positions must be over-collateralized based on the **Oracle Price** (not the market trading price).
 
 *   **Minimum Collateralization Ratio (MCR):** 110%
-    *   This is the liquidation threshold. If your collateral value falls below 110% of your debt value, your position may be liquidated.
-*   **Recommendation:** We strongly recommend minting at a ratio of **120% or higher** to provide a safety buffer against price movements.
+    *   This is the liquidation threshold. If your collateral value falls below 110% of your debt value (calculated using the Oracle Price), your position may be liquidated.
+*   **Recommendation:** We strongly recommend minting at a ratio of **120% or higher** to provide a safety buffer against real estate price movements.
 
 <Warning>
-  **Liquidation Risk:** If the price of SQFT rises (increasing your debt value) or the value of your collateral falls, your ratio decreases. Monitor your health factor closely.
+  **Liquidation Risk:** If the **Oracle price** of the underlying real estate rises (increasing your debt value relative to your collateral), your collateralization ratio decreases. Monitor your health factor closely. Market price fluctuations on the exchange do **not** affect your liquidation risk directly, only changes in the Oracle price do.
 </Warning>
 
 ## Burning (Closing a Position)
