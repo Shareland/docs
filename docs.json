@@ -29,17 +29,9 @@
             "group": "Getting Started",
             "pages": [
               "guides/introduction",
-              "guides/quickstart",
-              "guides/why-shareland",
-              "guides/what-is-sqft",
+              "guides/what-are-sqft-tokens",
               "guides/how-it-works",
               "guides/supported-markets"
-            ]
-          },
-          {
-            "group": "Products",
-            "pages": [
-              "guides/tycoon"
             ]
           }
         ]
@@ -59,20 +51,13 @@
             "pages": [
               "how-to/buy-sqft",
               "how-to/sell-sqft",
-              "how-to/stake-sqft",
+              "how-to/stake-and-claim",
               "how-to/borrow-mint-burn",
               "how-to/understand-oracle"
             ]
-          },
-          {
-            "group": "Community & Rewards",
-            "pages": [
-              "how-to/community-tabs",
-              "how-to/points-rewards"
-            ]
           }
         ]
-      },
+      }
       {
         "tab": "Reference",
         "groups": [
@@ -86,9 +71,10 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
+    ]
+  },
+  "global": {
+    "anchors": [
         {
           "anchor": "Exchange",
           "href": "https://share.land",
