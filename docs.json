@@ -57,14 +57,14 @@
             ]
           }
         ]
-      }
+      },
       {
         "tab": "Reference",
         "groups": [
           {
             "group": "Resources",
             "pages": [
-              "reference/feq",
+              "reference/faq",
               "reference/glossary",
               "reference/regulatory"
             ]
@@ -75,23 +75,22 @@
   },
   "global": {
     "anchors": [
-        {
-          "anchor": "Exchange",
-          "href": "https://share.land",
-          "icon": "arrow-up-right"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://discord.com/invite/5njaDH5y39",
-          "icon": "discord"
-        },
-        {
-          "anchor": "Twitter",
-          "href": "https://x.com/sharedotland",
-          "icon": "x-twitter"
-        }
-      ]
-    }
+      {
+        "anchor": "Exchange",
+        "href": "https://share.land",
+        "icon": "arrow-up-right"
+      },
+      {
+        "anchor": "Community",
+        "href": "https://discord.com/invite/5njaDH5y39",
+        "icon": "discord"
+      },
+      {
+        "anchor": "Twitter",
+        "href": "https://x.com/sharedotland",
+        "icon": "x-twitter"
+      }
+    ]
   },
   "footer": {
     "socials": {
