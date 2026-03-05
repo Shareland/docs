@@ -24,8 +24,8 @@
   "topbarCtaButton": {
     "name": "Start Investing",
     "url": "https://share.land"
-    },
-   "tabs": [
+  },
+  "tabs": [
     {
       "name": "Guides",
       "url": "guides"
@@ -72,6 +72,8 @@
         "how-to/create-account",
         "how-to/buy-sqft",
         "how-to/sell-sqft",
+        "how-to/borrow-mint-burn",
+        "how-to/stake-and-claim",
         "how-to/view-portfolio",
         "how-to/understand-oracle"
       ]
