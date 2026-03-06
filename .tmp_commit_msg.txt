@@ -1,6 +1,0 @@
-fix: Rewrite SQFT pricing section and escape dollar signs in MDX
-
-- Rewrites "How SQFT is priced" to clarify that market (not oracle)
-  sets the price, with oracle as a reference anchor and soft peg
-- Escapes all $ currency symbols across 5 files to prevent Mintlify
-  from interpreting them as LaTeX math delimiters
