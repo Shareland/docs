@@ -1,0 +1,6 @@
+chore: Remove all em-dashes and add $TYCOON contract address
+
+- Replace 52 em-dashes across 14 .mdx files with periods, commas,
+  or colons as appropriate for readability
+- Add $TYCOON contract address (0xdA4c...3120) to tycoon.mdx with
+  BaseScan and Virtuals links
