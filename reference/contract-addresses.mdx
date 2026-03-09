@@ -1,0 +1,49 @@
+---
+title: Contract Addresses
+description: Verified smart contract addresses for the Shareland exchange on Base mainnet.
+---
+
+Shareland runs entirely on-chain on **Base** (chainId 8453). All contracts are verified on BaseScan, and you can inspect the source code at any time.
+
+## Core Contracts
+
+These are the beacon proxy addresses that users interact with.
+
+| Contract | Address | BaseScan |
+|----------|---------|----------|
+| ShareLandMarket | `0x6E43100ad67C1e5FcFE86f764C309D0fc09b63D7` | [View](https://basescan.org/address/0x6E43100ad67C1e5FcFE86f764C309D0fc09b63D7) |
+| ShareLandToken | `0xEe5FB96a1632820a1F2b8FAf29f203829D3d7CE2` | [View](https://basescan.org/address/0xEe5FB96a1632820a1F2b8FAf29f203829D3d7CE2) |
+| OrderBook | `0x6A4fB77BAc500893E9A753dE32DcEA0E939D30B0` | [View](https://basescan.org/address/0x6A4fB77BAc500893E9A753dE32DcEA0E939D30B0) |
+| CollateralPosition | `0x8604455F37C96A86B1069B409b88E9b3fc2e3c36` | [View](https://basescan.org/address/0x8604455F37C96A86B1069B409b88E9b3fc2e3c36) |
+| LiquidityProviderToken | `0xf6394875d3759cabF05aE57D4F7A1b8B9bFE9f58` | [View](https://basescan.org/address/0xf6394875d3759cabF05aE57D4F7A1b8B9bFE9f58) |
+
+## Oracle Contracts
+
+| Contract | Address | BaseScan |
+|----------|---------|----------|
+| DecentralizedOracle | `0x6b0523C666582513CAd89E3F653854EF650E0e2C` | [View](https://basescan.org/address/0x6b0523C666582513CAd89E3F653854EF650E0e2C) |
+| SimpleOracle | `0x37C408c0F1752e33ed169cEe6B5B881551Ad64Ea` | [View](https://basescan.org/address/0x37C408c0F1752e33ed169cEe6B5B881551Ad64Ea) |
+
+## Infrastructure
+
+| Contract | Address | BaseScan |
+|----------|---------|----------|
+| MarketFormula | `0x697631c4fda4B984c6E350f2b0716a8a100C7693` | [View](https://basescan.org/address/0x697631c4fda4B984c6E350f2b0716a8a100C7693) |
+| ExchangeRateConverter | `0x0BcF105266f378ecD2BC1fea13fbf7550f574615` | [View](https://basescan.org/address/0x0BcF105266f378ecD2BC1fea13fbf7550f574615) |
+
+## External Tokens
+
+| Token | Address | BaseScan |
+|-------|---------|----------|
+| USDC (Circle) | `0x833589fcd6edb6e08f4c7c32d4f71b54bda02913` | [View](https://basescan.org/address/0x833589fcd6edb6e08f4c7c32d4f71b54bda02913) |
+| \$TYCOON | `0xdA4c86B5444294a5Ba3b806aE7718f1f95Cc3120` | [View](https://basescan.org/address/0xdA4c86B5444294a5Ba3b806aE7718f1f95Cc3120) |
+
+## Architecture
+
+Shareland uses an **upgradeable beacon proxy pattern** (OpenZeppelin). The addresses above are the proxies that users interact with. Implementation contracts sit behind the beacon and can be upgraded without changing the proxy address.
+
+All implementation source code is verified on BaseScan.
+
+<Info>
+If you see a MetaMask "Address needs review" warning, this is a standard alert for newer contracts. You can verify any address above by clicking the BaseScan link and confirming the source code is verified.
+</Info>
