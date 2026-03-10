@@ -1,0 +1,97 @@
+---
+title: Fund Your Account
+description: How to get USDC and ETH on Base so you can trade on Shareland.
+---
+
+Shareland runs on the **Base** network. To trade, you need:
+
+- **USDC** — the currency used to buy and sell SQFT tokens
+- **A small amount of ETH** — to cover gas fees (typically less than $0.01 per transaction)
+
+<Note>
+  Both USDC and ETH must be on the **Base** network specifically. Funds on Ethereum mainnet, Arbitrum, Polygon, or other networks will not appear in Shareland.
+</Note>
+
+## Step 1: Buy USDC and ETH
+
+Purchase USDC and ETH from a crypto exchange. Popular options include:
+
+- [Coinbase](https://www.coinbase.com) — supports direct withdrawals to Base
+- [Kraken](https://www.kraken.com)
+- [Binance](https://www.binance.com)
+
+<Tip>
+  If your exchange supports Base network withdrawals directly, you can skip the bridging step entirely. Coinbase supports this natively.
+</Tip>
+
+## Step 2: Send to your wallet on Base
+
+Withdraw USDC and ETH from the exchange to your wallet address. When withdrawing:
+
+1. Copy your wallet's public address (the same address you use to log into Shareland)
+2. In the exchange withdrawal screen, paste your wallet address
+3. **Select "Base" as the network** — this is the critical step
+
+<Warning>
+  Double-check that you've selected **Base** as the withdrawal network. If you send on the wrong network (e.g., Ethereum mainnet or Arbitrum), your funds will not appear in Shareland. See [Common Mistakes](#common-mistakes) below.
+</Warning>
+
+## Step 3: Verify on Shareland
+
+Once the transfer completes (usually within a few minutes):
+
+1. Go to [share.land](https://share.land) and connect your wallet
+2. Your USDC and ETH balances should appear automatically
+3. You're ready to trade
+
+<Check>
+  If your balance appears in the exchange interface, you're all set to start trading.
+</Check>
+
+## Common Mistakes
+
+### Sent funds on the wrong network
+
+If you accidentally sent USDC or ETH on Ethereum mainnet, Arbitrum, or another network instead of Base:
+
+1. **Don't panic** — your funds are not lost, they're just on a different network
+2. Send them back to your exchange account (on the network you used)
+3. Re-send from the exchange, this time selecting **Base** as the network
+
+### Sent the wrong token
+
+Shareland uses **USDC** (USD Coin), not USDT, DAI, or other stablecoins. Make sure you're sending USDC specifically.
+
+### Balance not showing up
+
+If your transfer completed but your balance isn't showing in Shareland:
+
+- Confirm the transaction on [BaseScan](https://basescan.org) by searching your wallet address
+- Make sure you're connected with the same wallet you sent funds to
+- Try refreshing the page
+
+## FAQ
+
+<AccordionGroup>
+  <Accordion title="How much ETH do I need for gas?">
+    Very little. Base gas fees are typically under $0.01 per transaction. Having $1–2 worth of ETH is more than enough for hundreds of trades.
+  </Accordion>
+  <Accordion title="Is there a minimum amount of USDC I need?">
+    There is no minimum trade size on Shareland. A minimum fee of $0.10 applies per transaction, so very small trades may not be cost-efficient.
+  </Accordion>
+  <Accordion title="Which wallets are supported?">
+    Any Web3 wallet that supports the Base network: MetaMask, Coinbase Wallet, Rainbow, or any WalletConnect-compatible wallet.
+  </Accordion>
+  <Accordion title="Can I use a Coinbase account directly?">
+    You need a self-custody wallet (like Coinbase Wallet, not your Coinbase exchange account). Withdraw from Coinbase to your Coinbase Wallet on the Base network, then connect that wallet to Shareland.
+  </Accordion>
+</AccordionGroup>
+
+<CardGroup cols={2}>
+  <Card title="Create an account" icon="user-plus" href="/how-to/create-account">
+    Set up your Shareland account
+  </Card>
+  <Card title="Buy SQFT tokens" icon="coins" href="/how-to/buy-sqft">
+    Make your first trade
+  </Card>
+</CardGroup>

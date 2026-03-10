@@ -46,6 +46,7 @@
             "group": "Your Account",
             "pages": [
               "how-to/create-account",
+              "how-to/fund-your-account",
               "how-to/view-portfolio"
             ]
           },
